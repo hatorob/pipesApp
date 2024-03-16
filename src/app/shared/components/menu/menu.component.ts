@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { last } from 'rxjs';
 
 @Component({
   selector: 'shared-menu',
