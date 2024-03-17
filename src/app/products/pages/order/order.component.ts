@@ -10,6 +10,8 @@ export class OrderComponent {
 
   public isUpperCase: boolean = false;
 
+  public sortByType: keyof Hero | '' = "";
+
   public heroes: Hero[] = [
     {
       name: 'Superman',
@@ -47,6 +49,17 @@ export class OrderComponent {
     this.isUpperCase = !this.isUpperCase;
   }
 
+  orderByName(): void {
+    this.sortByType = 'name';
+  }
+
+  orderByFly(): void {
+    this.sortByType = 'canFly';
+  }
+
+  orderByColor(): void {
+    this.sortByType = 'color';
+  }
 
 
 }
