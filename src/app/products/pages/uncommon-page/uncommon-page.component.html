@@ -63,7 +63,11 @@
   </div>
   <div class="col-4 mt-6">
     <p-fieldset legend="ASYNC Pipe" [toggleable]="true">
+      <pre *ngIf="!(myObservableTimer | async)"> Resolviendo observable </pre>
+      <pre> {{ myObservableTimer | async }} </pre>
 
+      <pre *ngIf="!(myObservableTimer | async)"> Resolviendo promesa </pre>
+      <pre> {{ promiseValue | async }} </pre>
     </p-fieldset>
   </div>
 </div>
