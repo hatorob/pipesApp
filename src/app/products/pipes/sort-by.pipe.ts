@@ -20,7 +20,6 @@ export class SortByPipe implements PipeTransform {
       default:
         return heroes;
     }
-    return heroes;
   }
 
 }
