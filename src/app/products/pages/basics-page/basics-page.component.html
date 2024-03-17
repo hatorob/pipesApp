@@ -1,24 +1,64 @@
-<p-panel header="PIPES">
-  <h1>Pipes básicos</h1>
-  <p>
-    Pipes incluídos en Angular - Usualmente en el Common Module
-  </p>
-</p-panel>
+<div class="mt-4">
+  <p-panel header="PIPES">
+    <h1>Pipes básicos</h1>
+    <p>
+      Pipes incluídos en Angular - Usualmente en el Common Module
+    </p>
+  </p-panel>
+</div>
 
-<div class="p-grid">
-  <div class="p-col-4">
+<div class="grid">
+  <!-- de texto -->
+  <div class="col-4 mt-4">
     <p-card header="uppercase">
-      Valor inicial - {{ nameLower }} - Resultado - {{ nameLower | uppercase }}
+      {{ nameLower }} - Resultado - {{ nameLower | uppercase }}
     </p-card>
   </div>
-  <div class="p-col-4">
+  <div class="col-4 mt-4">
     <p-card header="lowercase">
-      Valor inicial - {{ nameUpper }} - Resultado - {{ nameUpper | lowercase }}
+      {{ nameUpper }} - Resultado - {{ nameUpper | lowercase }}
     </p-card>
   </div>
-  <div class="p-col-4">
+  <div class="col-4 mt-4">
     <p-card header="titlecase">
-      Valor inicial - {{ fullName }} - Resultado - {{ fullName | titlecase }}
+      {{ fullName }} - Resultado - {{ fullName | titlecase }}
     </p-card>
   </div>
+  <!-- de fecha inicio -->
+  <div class="col-6 mt-4">
+    <p-card header="titlecase">
+      <ol>
+        <li>fecha</li>
+        <li>fecha | date</li>
+        <li>fecha | date:'short'</li>
+        <li>fecha | date:'long'</li>
+        <li>fecha | date:'MMMM'</li>
+        <li>fecha | date:'MMMM dd, yyyy'</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>fecha | date:'long':'GMT-6'</li>
+        <li>fecha | date:'long':'GMT-4'</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-6 mt-4">
+    <p-card header="titlecase">
+      <ol>
+        <li> {{ customDate }} </li>
+        <li> {{ customDate | date }} </li>
+        <li> {{ customDate | date:'short' }} </li>
+        <li> {{ customDate | date:'long' }} </li>
+        <li> {{ customDate | date:'MMMM' }} </li>
+        <li> {{ customDate | date:'MMMM dd, yyyy' }} </li>
+      </ol>
+      <hr>
+      <ol>
+        <li>{{ customDate | date:'long':'GMT-6' }}</li>
+        <li>{{ customDate | date:'long':'GMT-4' }}</li>
+      </ol>
+    </p-card>
+  </div>
+  <!-- de fecha fin -->
+
 </div>
