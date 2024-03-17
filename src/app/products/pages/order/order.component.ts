@@ -36,7 +36,7 @@ export class OrderComponent {
     {
       name: 'Daredevil',
       canFly: false,
-      color: Color.red
+      color: Color.blue
     },
     {
       name: 'Robin',
@@ -49,17 +49,8 @@ export class OrderComponent {
     this.isUpperCase = !this.isUpperCase;
   }
 
-  orderByName(): void {
-    this.sortByType = 'name';
+  changeOrder( value: keyof Hero): void {
+    this.sortByType = value;
   }
-
-  orderByFly(): void {
-    this.sortByType = 'canFly';
-  }
-
-  orderByColor(): void {
-    this.sortByType = 'color';
-  }
-
 
 }

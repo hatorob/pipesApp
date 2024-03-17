@@ -12,9 +12,9 @@
     <p-button label="toogleCase" icon="pi pi-search" (click)="toggleUpperCase()"></p-button>
   </div>
   <div class="p-toolbar-group-end">
-    <p-button (click)="orderByName()" class="mr-2" label="por nombre" icon="pi pi-sort" styleClass="p-button-success"></p-button>
-    <p-button (click)="orderByFly()" class="mr-2" label="Por volar" icon="pi pi-sort" styleClass="p-button-danger"></p-button>
-    <p-button (click)="orderByColor()" class="mr-2" label="Por color" icon="pi pi-sort" styleClass="p-button-help"></p-button>
+    <p-button (click)="changeOrder('name')" class="mr-2" label="por nombre" icon="pi pi-sort" styleClass="p-button-success"></p-button>
+    <p-button (click)="changeOrder('canFly')" class="mr-2" label="Por volar" icon="pi pi-sort" styleClass="p-button-danger"></p-button>
+    <p-button (click)="changeOrder('color')" class="mr-2" label="Por color" icon="pi pi-sort" styleClass="p-button-help"></p-button>
   </div>
 </p-toolbar>
 
