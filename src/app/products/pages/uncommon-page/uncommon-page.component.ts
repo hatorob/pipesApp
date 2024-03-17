@@ -36,6 +36,13 @@ export class UncommonPageComponent {
   }
 
 
+  // Key value pipe
+
+  public person = {
+   name: 'Fernando',
+   age: 36,
+   address: 'Ottawa, Canada'
+  };
 
 
 }
