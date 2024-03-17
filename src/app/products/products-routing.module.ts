@@ -19,7 +19,7 @@ const routes: Routes = [
     component: UncommonPageComponent
   },
   {
-    path: 'order',
+    path: 'custom',
     component: OrderComponent
   },
   {
